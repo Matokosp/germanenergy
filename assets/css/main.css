@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+  color: #404041;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+.page-header {
+  background-color: #f2f2f2;
+  position: relative;
+}
+
+.header-item {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: calc(var(--vh, 1vh) * 20) 5vw;
+}
+
+.header-item h2 {
+  border-bottom: solid 1px #fff;
+  padding-bottom: 5px;
+}
+
+.page-section {
+  padding: 80px 5vw;
+  text-align: center;
+}
+
+.page-section h2 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 800;
+  color: #404041;
+  margin-bottom: 0px;
+}
+
+.page-section-title-separation {
+  display: inline-block;
+  width: 80px;
+  background-color: #404041;
+  height: 2px;
+}
+
+.page-section-title p {
+  color: #404041;
+  font-size: 1.1rem;
+  margin-top: 5px;
+}
+
+/* PRODUCT DISPLAY SECTION */
+
+.home-product-display {
+  background-color: #f1f1f2;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.glossary-link {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  color: #fff;
+  padding: 4px 40px 4px 30px;
+  clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
+  border-radius: 35px 0 0 35px;
+}
+
+.home-product-display .glossary-link {
+  background-color: #404041;
+}
+
+/* TIPOS DE PRODUCTO SLIDER SECTION */
+
+.product-types {
+  border-bottom: solid #d0d2d3 6px;
+}
+
+.product-type-item {
+  text-align: center;
+}
+
+.product-type-item-img {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+}
+
+.product-type-item img {
+}
+
+.product-type-item p {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}

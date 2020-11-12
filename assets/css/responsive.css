@@ -1,0 +1,74 @@
+@media screen and (min-width: 720px) and (orientation: portrait) {
+
+}
+
+@media screen and (min-width: 1000px) and (orientation: landscape) {
+  /* MENU */
+
+  /* hamburger menu icon */
+
+  .laptop_menu {
+    position: fixed;
+    top: 15px;
+    left: 10px;
+    z-index: 51;
+    width: 200px;
+  }
+
+  .laptop_menu img {
+    width: 100%;
+  }
+
+  .hamburger_div {
+    display: none;
+  }
+
+  /* menu hidden */
+
+  .menu {
+    height: 90px;
+    flex-direction: row;
+    /* align-items: center; */
+    /* justify-content: center; */
+    transform: translateX(0vw);
+  }
+
+  /* menu show */
+
+  .menu-link {
+    color: #fff;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin: 0px 25px;
+  }
+
+  .menu-link-active {
+    color: #C4D72C;
+    font-weight: 700;
+  }
+
+  .menu_divison {
+    display: block;
+    background-color: #fff;
+    height: 30px;
+    width: 2px;
+  }
+
+  .rrss_section {
+    position: absolute;
+    top: 25px;
+    right: 5vw;
+    width: 7%;
+    padding: 0px;
+  }
+
+  .rrss_menu {
+    width: 35px;
+  }
+
+  .rrss_menu img {
+    width: 100%;
+  }
+}
