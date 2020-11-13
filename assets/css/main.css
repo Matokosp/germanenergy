@@ -24,6 +24,18 @@ img {
   width: 100%;
 }
 
+.section-background-img {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.page-section-title-separation {
+  display: inline-block;
+  width: 80px;
+  height: 2px;
+}
+
 .page-header {
   background-color: #f2f2f2;
   position: relative;
@@ -31,13 +43,11 @@ img {
 
 .header-item {
   position: relative;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
   padding: calc(var(--vh, 1vh) * 20) 5vw;
 }
 
 .header-item h2 {
+  font-size: 2rem;
   border-bottom: solid 1px #fff;
   padding-bottom: 5px;
 }
@@ -56,13 +66,6 @@ img {
   margin-bottom: 0px;
 }
 
-.page-section-title-separation {
-  display: inline-block;
-  width: 80px;
-  background-color: #404041;
-  height: 2px;
-}
-
 .page-section-title p {
   color: #404041;
   font-size: 1.1rem;
@@ -74,6 +77,10 @@ img {
 .home-product-display {
   background-color: #f1f1f2;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.home-product-display .page-section-title-separation {
+  background-color: #404041;
 }
 
 .glossary-link {
@@ -113,4 +120,144 @@ img {
   text-transform: uppercase;
   font-size: 0.75rem;
   letter-spacing: 1px;
+}
+
+/* HOME BRAND SECTION */
+
+.home-brand {
+  background-image: url("../images/ge-home-brand.jpg");
+  color: #fff;
+}
+
+.home-brand-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-brand-container > img {
+  width: 60%;
+  max-width: 250px;
+}
+
+.home-brand-container > div {
+  margin-top: 30px;
+}
+
+.home-brand-text {
+  text-align: left;
+}
+
+.home-brand-text h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.home-brand-text-division {
+  display: block;
+  background-color: #fff;
+  height: 1px;
+}
+
+.home-brand-text p {
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+/* HOME VIDEO SECTION */
+
+.video-section {
+  height: calc(var(--vh, 1vh) * 80);
+  padding: 0 5vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/produccion-bkg.jpg");
+}
+
+.video-section video {
+  display: none;
+}
+
+.video-section-text {
+  color: #fff;
+}
+
+.video-section-text h2 {
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.video-section-text .page-section-title-separation {
+  background-color: #fff;
+}
+
+.video-section-text p {
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+/* CERTIFICACIONES SECTION */
+
+.certificaciones-section .page-section-title-separation {
+  background-color: #404041;
+}
+
+.certificaciones-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.certificacion-item {
+  width: 60%;
+  max-width: 250px;
+  margin: 30px 0;
+}
+
+.certificacion-item img {
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  background-image: url("../images/footer-bkg.jpg");
+  padding: 20px 5vw;
+  color: #fff;
+}
+
+footer h3 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+footer .page-section-title-separation {
+  display: block;
+  margin: 0 auto;
+  background-color: #fff;
+  margin-bottom: 15px;
+}
+
+footer .footer-mp-container {
+  display: inline-block;
+  width: 40%;
+  max-width: 220px;
+  margin: 30px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .footer-ge-container {
+  display: inline-block;
+  width: 30%;
+  max-width: 100px;
+  margin: 30px 0;
 }
