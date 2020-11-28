@@ -1,6 +1,6 @@
 // OWL CAROUSEL
 
-$(".owl-carousel").owlCarousel({
+$(".page-header").owlCarousel({
   loop: true,
   margin: 10,
   autoplay: true,
@@ -11,13 +11,27 @@ $(".owl-carousel").owlCarousel({
       items: 1,
       nav: false,
     },
-    600: {
+  },
+});
+
+$(".owl-theme-display").owlCarousel({
+  loop: true,
+  margin: 10,
+  autoplay: true,
+  autoplayTimeout: 5000,
+  responsiveClass: true,
+  responsive: {
+    0: {
       items: 1,
       nav: false,
     },
+    700: {
+      items: 2,
+      nav: false,
+    },
     1000: {
-      items: 1,
-      nav: true,
+      items: 3,
+      nav: false,
     },
   },
 });
@@ -98,6 +112,19 @@ function myFunction(x) {
   if (x.matches) {
     // If media query matches
 
+    // $("#productLink").on("mouseenter", function () {
+    //   $("#menuList").css({
+    //     visibility: "visible",
+    //     opacity: 1,
+    //   });
+    // });
+    // $("#productLink").on("mouseleave", function () {
+    //   $("#menuList").css({
+    //     visibility: "hidden",
+    //     opacity: 0,
+    //   });
+    // });
+
     var windowHeight = $(window).height();
     var position = $(window).scrollTop();
 
@@ -113,28 +140,10 @@ function myFunction(x) {
     // MENU ACTIVE
 
     $(window).on("scroll", function () {
-      if ($(window).scrollTop() >= sectionOne.top) {
-        $("#menu").children("a:nth-child(1)").addClass("menu-link-active");
-        $("#menu").children("a:nth-child(3)").removeClass("menu-link-active");
-      } else {
-        $("#menu").children("a:nth-child(1)").removeClass("menu-active");
-      }
-
       if ($(window).scrollTop() >= sectionTwo.top - 100) {
-        $("#menu").children("a:nth-child(1)").removeClass("menu-link-active");
-        $("#menu").children("a:nth-child(3)").addClass("menu-link-active");
-        $("#menu").children("a:nth-child(5)").removeClass("menu-link-active");
-      }
-
-      if ($(window).scrollTop() >= sectionThree.top - 100) {
-        $("#menu").children("a:nth-child(3)").removeClass("menu-link-active");
-        $("#menu").children("a:nth-child(5)").addClass("menu-link-active");
-        $("#menu").children("a:nth-child(7)").removeClass("menu-link-active");
-      }
-
-      if ($(window).scrollTop() >= (sectionThree.top * 10) / 7) {
-        $("#menu").children("a:nth-child(5)").removeClass("menu-link-active");
-        $("#menu").children("a:nth-child(7)").addClass("menu-link-active");
+        $("#menu").addClass("menu-scroll");
+      } else {
+        $("#menu").removeClass("menu-scroll");
       }
     });
   }
